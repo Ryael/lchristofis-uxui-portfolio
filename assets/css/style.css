@@ -1,0 +1,66 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap');
+
+/* Common */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  background-color: rgb(253, 253, 253);
+}
+
+p, h1 {
+  font-family: Outfit, sans-serif;
+  text-transform: lowercase;
+  color: #111;
+}
+
+/* Hero */
+
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 90px);
+}
+
+#hero-decorator {
+  position: relative;
+  height: 130px;
+  width: 1px;
+  background-color: rgb(233, 233, 233);
+  margin-bottom: 160px;
+}
+
+#hero-decorator::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -3px;
+  width: 7px;
+  height: 7px;
+  background-color: #f5dcd9;
+  border-radius: 50%;
+  }
+
+#hero-title {
+  text-align: center;
+}
+
+.small-title {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+#main-title {
+  font-size: 98px;
+  line-height: 100%;
+  margin-bottom: 45px;
+}

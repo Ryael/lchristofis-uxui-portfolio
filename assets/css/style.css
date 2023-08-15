@@ -45,16 +45,6 @@ p, h1 {
   left: 18px;
 }
 
-#navigation-logo img {
-  height: 50px;
-  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-}
-
-#navigation-logo img:hover {
-  transform: scale(1.1);
-  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-}
-
 .navigation-menu {
   display: flex;
   justify-content: center;

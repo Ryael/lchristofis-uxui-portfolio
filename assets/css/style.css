@@ -5,7 +5,7 @@
 /* 2. Global Variables */
 
 :root {
-  --pink: #f5dcd9;
+  --pink: #eab6b0;
   --font: "Outfit", sans-serif;
   --font-color: #111;
 }
@@ -81,10 +81,11 @@ p, h1 {
 /* 5. Hero */
 
 #hero-section {
+  height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: calc(100vh - 90px);
+  justify-content: space-between;
 }
 
 #hero-decorator {
@@ -92,7 +93,6 @@ p, h1 {
   height: 130px;
   width: 1px;
   background-color: rgb(233, 233, 233);
-  margin-bottom: 160px;
 }
 
 #hero-decorator::after {
@@ -112,13 +112,61 @@ p, h1 {
 
 .small-title {
   font-size: 19px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 2px;
   margin-bottom: 30px;
+}
+
+.small-title:last-of-type {
+  margin-bottom: 0px;
 }
 
 #main-title {
   font-size: 98px;
   line-height: 100%;
   margin-bottom: 45px;
+}
+
+#hero-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(32, 33, 36, 0.1);
+  width: 170px;
+  height: 180px;
+  border-top-right-radius: 200px;
+  border-top-left-radius: 200px;
+}
+
+#circular-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+}
+
+#circular-text text {
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 6.5px;
+  text-transform: lowercase;
+}
+
+#scroll-button {
+  background-color: rgb(32, 33, 36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 90px;
+  position: absolute;
+  border: solid 15px rgb(255, 255, 255);
+}
+
+#scroll-button line,
+#scroll-button polyline {
+  stroke: rgb(255, 255, 255);
 }

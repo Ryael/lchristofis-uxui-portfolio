@@ -91,6 +91,7 @@ p, h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: 0 15%;
 }
 
 #hero-decorator {
@@ -132,7 +133,7 @@ p, h1 {
   margin-bottom: 45px;
 }
 
-#hero-scroll {
+.hero-scroll {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,4 +175,68 @@ p, h1 {
 #scroll-button line,
 #scroll-button polyline {
   stroke: rgb(255, 255, 255);
+}
+
+/* About */
+
+#about-section {
+  padding: 0 15%;
+  margin-bottom: 90px;
+}
+
+#about-section .hero-scroll {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  padding-top: 40px;
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.hero-scroll img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 36px;
+  font-family: var(--font);
+  text-transform: lowercase;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.quotation-marks {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  background-color: var(--pink);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+#about-description p {
+  color: rgba(32, 33, 36, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%;
+  margin-bottom: 30px;
+}
+
+#signature {
+  width: 140px;
 }

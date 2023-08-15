@@ -40,6 +40,15 @@ p, h1 {
   border-bottom: solid 1px rgb(233, 233, 233);
 }
 
+#navigation-logo {
+  position: absolute;
+  left: 18px;
+}
+
+#navigation-logo img {
+  height: 50px;
+}
+
 .navigation-menu {
   display: flex;
   justify-content: center;

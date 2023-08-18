@@ -10,6 +10,7 @@
   --font-color: #111;
 }
 
+
 /* 3. Common Styles */
 
 * {
@@ -56,32 +57,33 @@ p, a, h1, h2, h3 {
 }
 
 .navigation-menu li {
-  text-transform: lowercase;
   padding: 0 10px;
   margin-right: 30px;
   letter-spacing: 2px;
+  position: relative;
 }
 
 .navigation-menu li:last-of-type {
   margin-right: 0px;
+  padding-right: 0px;
 }
 
-.navigation-link {
+.navigation-link a {
   color: var(--font-color);
   transition: 0.3s ease-in-out;
   text-decoration: none;
 }
 
-.navigation-link:hover {
+.navigation-link a:hover {
   color: #7b7b7b;
   transition: 0.3s ease-in-out;
 }
 
-.active-link:hover {
+.active-link a:hover {
   color: inherit;
 }
 
-.active-link::before {
+.active-link > a::before {
   content: "";
   margin-right: 10px;
   position: absolute;
@@ -232,7 +234,6 @@ p, a, h1, h2, h3 {
 
 #about h2 {
   font-size: 36px;
-  text-transform: lowercase;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -288,7 +289,6 @@ p, a, h1, h2, h3 {
   background-color: rgb(253, 253, 253);
   font-size: 28px;
   font-weight: 500;
-  text-transform: lowercase;
 }
 
 .section-divider {

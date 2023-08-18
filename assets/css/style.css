@@ -8,6 +8,7 @@
   --pink: #eab6b0;
   --font: "Outfit", sans-serif;
   --font-color: #111;
+  --hover: 0.3s ease-in-out;
 }
 
 
@@ -27,6 +28,14 @@ p, a, h1, h2, h3 {
   font-family: var(--font);
   text-transform: lowercase;
   color: var(--font-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* 4. Navigation */
@@ -69,13 +78,12 @@ p, a, h1, h2, h3 {
 
 .navigation-link a {
   color: var(--font-color);
-  transition: 0.3s ease-in-out;
-  text-decoration: none;
+  transition: var(--hover);
 }
 
 .navigation-link a:hover {
-  color: #7b7b7b;
-  transition: 0.3s ease-in-out;
+  color: var(--pink);
+  transition: var(--hover);
 }
 
 .active-link a:hover {
@@ -114,7 +122,8 @@ p, a, h1, h2, h3 {
   background-color: rgb(233, 233, 233);
 }
 
-#hero-decorator::after {
+#hero-decorator::after,
+#contact-decorator::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -123,7 +132,7 @@ p, a, h1, h2, h3 {
   height: 7px;
   background-color: var(--pink);
   border-radius: 50%;
-  }
+}
 
 #hero-title {
   text-align: center;
@@ -184,13 +193,13 @@ p, a, h1, h2, h3 {
   border-radius: 90px;
   position: absolute;
   border: solid 15px rgb(255, 255, 255);
-  transition: 0.3s ease-in-out;
+  transition: var(--hover);
   cursor: pointer;
 }
 
 #scroll-button:hover {
   background-color: #7b7b7b;
-  transition: 0.3s ease-in-out;
+  transition: var(--hover);
 }
 
 #scroll-button line,
@@ -337,23 +346,123 @@ p, a, h1, h2, h3 {
 #footer-links a {
   letter-spacing: 2px;
   font-weight: 300;
-  text-decoration: none;
   color: rgba(32, 33, 36, 0.5);
-  transition: 0.3s ease-in-out;
+  transition: var(--hover);
   margin-right: 20px;
 }
 
-#footer-links a:nth-child(2) {
+#footer-links a:nth-child(3) {
   margin-right: 0px;
 }
 
 #footer-links a:hover {
   color: var(--font-color);
-  transition: 0.3s ease-in-out;
+  transition: var(--hover);
 }
 
 #footer-text {
   letter-spacing: 2px;
   color: rgba(32, 33, 36, 0.5);
   font-weight: 300;
+}
+
+/* Contact */
+
+#contact-section {
+  height: calc(90vh - 90px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15%;
+  padding-top: 90px;
+}
+
+#contact-decorator {
+  position: relative;
+  height: 90px;
+  width: 1px;
+  background-color: rgb(233, 233, 233);
+}
+
+#page-title {
+  padding: 60px 0 90px;
+  text-align: center;
+}
+
+#page-title h1 {
+  font-size: 65px;
+  margin-bottom: 60px;
+}
+
+#breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+#breadcrumbs li a {
+  color: var(--font-color);
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 18px;
+  white-space: nowrap;
+  transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+#home-crumb:hover {
+  color: var(--pink);
+  transition: ;
+}
+
+#home-crumb::after {
+  content: "/";
+  margin: 0 15px;
+  color: rgb(32, 33, 36);
+}
+
+#breadcrumbs li:last-child {
+  opacity: 0.4;
+  margin-right: 0;
+  pointer-events: none;
+}
+
+#contact-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+#contact-list li {
+  margin-bottom: 30px;
+}
+
+#contact-list li:last-of-type {
+  margin-bottom: 0px;
+}
+
+.details {
+  position: relative;
+  font-size: 18px;
+}
+
+.accent {
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: var(--pink);
+}
+
+.dark {
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: var(--font-color);
+}
+
+.details a {
+  transition: var(--hover);
+}
+
+.details  a:hover {
+  color: var(--pink);
+  transition: var(--hover);
 }

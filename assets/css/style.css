@@ -168,6 +168,7 @@ p, a, h1, h2, h3 {
 #circular-text text {
   font-weight: 400;
   font-size: 17px;
+  font-family: var(--font);
   letter-spacing: 6.5px;
   text-transform: lowercase;
 }

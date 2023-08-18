@@ -148,13 +148,13 @@ p, a, h1, h2, h3 {
 
 .hero-scroll {
   display: flex;
-  align-items: center;
   justify-content: center;
   background-color: rgba(32, 33, 36, 0.1);
   width: 170px;
-  height: 180px;
+  height: 200px;
   border-top-right-radius: 200px;
   border-top-left-radius: 200px;
+  padding-top: 25px;
 }
 
 #circular-text {
@@ -171,6 +171,7 @@ p, a, h1, h2, h3 {
   font-family: var(--font);
   letter-spacing: 6.5px;
   text-transform: lowercase;
+  fill: #373737;
 }
 
 #scroll-button {
@@ -205,13 +206,15 @@ p, a, h1, h2, h3 {
 }
 
 #about-section .hero-scroll {
+  padding-top: 0;
+  height: 170px;
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
-  padding-top: 40px;
   border-bottom-right-radius: 200px;
   border-bottom-left-radius: 200px;
   margin: 0 auto;
   margin-bottom: 90px;
+  align-items: center;
 }
 
 .hero-scroll img {

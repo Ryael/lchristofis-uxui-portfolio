@@ -23,7 +23,7 @@ body {
   background-color: rgb(253, 253, 253);
 }
 
-p, h1 {
+p, a, h1, h2, h3 {
   font-family: var(--font);
   text-transform: lowercase;
   color: var(--font-color);
@@ -57,7 +57,6 @@ p, h1 {
 }
 
 .navigation-menu li {
-  font-family: var(--font);
   text-transform: lowercase;
   padding: 0 10px;
   margin-right: 30px;
@@ -167,7 +166,6 @@ p, h1 {
 }
 
 #circular-text text {
-  font-family: var(--font);
   font-weight: 400;
   font-size: 17px;
   letter-spacing: 6.5px;
@@ -231,7 +229,6 @@ p, h1 {
 
 #about h2 {
   font-size: 36px;
-  font-family: var(--font);
   text-transform: lowercase;
   font-weight: 400;
   margin-bottom: 30px;
@@ -286,7 +283,6 @@ p, h1 {
   position: absolute;
   top: -6px;
   background-color: rgb(253, 253, 253);
-  font-family: var(--font);
   font-size: 28px;
   font-weight: 500;
   text-transform: lowercase;
@@ -314,4 +310,46 @@ p, h1 {
 .section-divider::after {
   left: unset;
   right: 0;
+}
+
+/* Footer */
+
+#footer {
+  position: relative;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+#footer-icons {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+#footer-links a {
+  font-weight: 300;
+  text-decoration: none;
+  color: rgba(32, 33, 36, 0.5);
+  transition: 0.3s ease-in-out;
+  margin-right: 20px;
+}
+
+#footer-links a:nth-child(2) {
+  margin-right: 0px;
+}
+
+#footer-links a:hover {
+  color: var(--font-color);
+  transition: 0.3s ease-in-out;
+}
+
+#footer-text {
+  color: rgba(32, 33, 36, 0.5);
+  font-weight: 300;
 }

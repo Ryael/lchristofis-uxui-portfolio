@@ -70,7 +70,17 @@ p, h1 {
 
 .navigation-link {
   color: var(--font-color);
+  transition: 0.3s ease-in-out;
   text-decoration: none;
+}
+
+.navigation-link:hover {
+  color: #7b7b7b;
+  transition: 0.3s ease-in-out;
+}
+
+.active-link:hover {
+  color: inherit;
 }
 
 .active-link::before {
@@ -174,6 +184,13 @@ p, h1 {
   border-radius: 90px;
   position: absolute;
   border: solid 15px rgb(255, 255, 255);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#scroll-button:hover {
+  background-color: #7b7b7b;
+  transition: 0.3s ease-in-out;
 }
 
 #scroll-button line,

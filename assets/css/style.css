@@ -38,6 +38,64 @@ li {
   list-style-type: none;
 }
 
+#page-section {
+  height: calc(90vh - 90px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15%;
+  padding-top: 90px;
+}
+
+#page-decorator {
+  position: relative;
+  height: 90px;
+  width: 1px;
+  background-color: rgb(233, 233, 233);
+}
+
+#page-title {
+  padding: 60px 0 90px;
+  text-align: center;
+}
+
+#page-title h1 {
+  font-size: 65px;
+  margin-bottom: 60px;
+}
+
+#breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+#breadcrumbs li a {
+  color: var(--font-color);
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 18px;
+  white-space: nowrap;
+  transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+#home-crumb:hover {
+  color: var(--pink);
+  transition: ;
+}
+
+#home-crumb::after {
+  content: "/";
+  margin: 0 15px;
+  color: rgb(32, 33, 36);
+}
+
+#breadcrumbs li:last-child {
+  opacity: 0.4;
+  margin-right: 0;
+  pointer-events: none;
+}
+
 /* 4. Navigation */
 
 #navigation-bar {
@@ -123,7 +181,7 @@ li {
 }
 
 #hero-decorator::after,
-#contact-decorator::after {
+#page-decorator::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -207,7 +265,7 @@ li {
   stroke: rgb(255, 255, 255);
 }
 
-/* About */
+/* 6. About */
 
 #about-section {
   padding: 0 15%;
@@ -271,7 +329,7 @@ li {
   width: 140px;
 }
 
-/* Skills */
+/* 7. Skills */
 
 #skills-section {
   padding: 0 15%;
@@ -323,7 +381,7 @@ li {
   right: 0;
 }
 
-/* Footer */
+/* 8. Footer */
 
 #footer {
   position: relative;
@@ -366,65 +424,7 @@ li {
   font-weight: 300;
 }
 
-/* Contact */
-
-#contact-section {
-  height: calc(90vh - 90px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 15%;
-  padding-top: 90px;
-}
-
-#contact-decorator {
-  position: relative;
-  height: 90px;
-  width: 1px;
-  background-color: rgb(233, 233, 233);
-}
-
-#page-title {
-  padding: 60px 0 90px;
-  text-align: center;
-}
-
-#page-title h1 {
-  font-size: 65px;
-  margin-bottom: 60px;
-}
-
-#breadcrumbs {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-}
-
-#breadcrumbs li a {
-  color: var(--font-color);
-  letter-spacing: 2px;
-  font-weight: 400;
-  font-size: 18px;
-  white-space: nowrap;
-  transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
-}
-
-#home-crumb:hover {
-  color: var(--pink);
-  transition: ;
-}
-
-#home-crumb::after {
-  content: "/";
-  margin: 0 15px;
-  color: rgb(32, 33, 36);
-}
-
-#breadcrumbs li:last-child {
-  opacity: 0.4;
-  margin-right: 0;
-  pointer-events: none;
-}
+/* 9. Contact */
 
 #contact-information {
   display: flex;

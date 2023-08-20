@@ -548,10 +548,16 @@ li {
   margin-bottom: 60px;
 }
 
+#fanlabel-img {
+  margin-bottom: 0;
+  margin-top: 60px;
+}
+
 #fanlabel-background,
 #fanlabel-goals,
 #fanlabel-problem,
-#fanlabel-solution {
+#fanlabel-solution,
+#fanlabel-final {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -565,7 +571,8 @@ li {
 #fanlabel-background h3,
 #fanlabel-goals h3,
 #fanlabel-problem h3,
-#fanlabel-solution h3 {
+#fanlabel-solution h3,
+#fanlabel-final h3 {
   font-size: 30px;
   font-weight: 600;
 }
@@ -573,7 +580,8 @@ li {
 #fanlabel-background p,
 #fanlabel-goals p,
 #fanlabel-problem p,
-#fanlabel-solution p {
+#fanlabel-solution p,
+#fanlabel-final p {
   color: rgba(32, 33, 36, 0.5);
   line-height: 155%;
 }
@@ -581,4 +589,18 @@ li {
 #fanlabel-background p:first-child,
 #fanlabel-problem p:first-child {
   margin-bottom: 15px;
+}
+
+#fanlabel-final {
+  padding-bottom: 90px;
+}
+
+#fanlabel-final a {
+  font-weight: 400;
+  transition: var(--hover);
+}
+
+#fanlabel-final a:hover {
+  color: var(--pink);
+  transition: var(--hover);
 }

@@ -11,7 +11,6 @@
   --hover: 0.3s ease-in-out;
 }
 
-
 /* 3. Common Styles */
 
 * {
@@ -79,12 +78,12 @@ li {
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
 
-#home-crumb:hover {
+#breadcrumbs li .crumb:hover {
   color: var(--pink);
-  transition: ;
+  transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
 
-#home-crumb::after {
+#breadcrumbs li .crumb::after {
   content: "/";
   margin: 0 15px;
   color: rgb(32, 33, 36);
@@ -467,9 +466,10 @@ li {
   transition: var(--hover);
 }
 
-/* Portfolio */
+/* 10. Portfolio */
 
-#portfolio-section {
+#portfolio-section,
+#project-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -502,7 +502,7 @@ li {
 .portfolio-item img {
   width: 80%;
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: solid 1px rgb(233, 233, 233)
 }
 
 .portfolio-description {
@@ -539,4 +539,46 @@ li {
 
 .round-button:hover {
   transform: scale(1.1);
+}
+
+/* 11. FanLabel */
+
+#project-section img {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+#fanlabel-background,
+#fanlabel-goals,
+#fanlabel-problem,
+#fanlabel-solution {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#fanlabel-goals,
+#fanlabel-problem,
+#fanlabel-solution {
+  margin-top: 60px;
+}
+
+#fanlabel-background h3,
+#fanlabel-goals h3,
+#fanlabel-problem h3,
+#fanlabel-solution h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#fanlabel-background p,
+#fanlabel-goals p,
+#fanlabel-problem p,
+#fanlabel-solution p {
+  color: rgba(32, 33, 36, 0.5);
+  line-height: 155%;
+}
+
+#fanlabel-background p:first-child,
+#fanlabel-problem p:first-child {
+  margin-bottom: 15px;
 }
